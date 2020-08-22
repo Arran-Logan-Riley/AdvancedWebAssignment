@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--so it is responsive-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This is a test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <!--import the js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Jqurry is needed for dropdown-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+<!--XML rusles and XML RSS-->
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navBarCustom">
+            <img class="headerLogo" src="Resources/globe-grid.svg">
+            <h2 class="text-light">ITDW 6.400</h2>
+            <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown activeColor">
+                        <a class="navbar-brand nav-link" aria-haspopup="true" aria-expanded="false" href="index.html">HOME </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FORMS
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="form.html">HTML</a>
+                            <a class="dropdown-item" href="googleForm.html">GOOGLE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                XML
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="xmlRules.html">XML RULES</a>
+                                <a class="dropdown-item" href="xmlRss.html">XML RSS</a>
+                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            RESEARCH
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="seo.html">SEO</a>
+                            <a class="dropdown-item" href="copyRight.html">COPYRIGHT</a>
+                            <a class="dropdown-item" href="refrences.html">REFRENCES</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="#">JAVASCRIPT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="showCase" id="showCase">
+            <div class="container backgroundImage">
+                <h2 class="text-center">Advanced Web And Internet Portfolio</h2>
+                <div class="container-fluid">
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua.
+                    </p>
+                </div>
+            </div>
+        
+        </section>
+        <div class="container-fluid">
+        <section id="Bio and webTech"> <!--Web Dev Technologies, has a list of 10. I think this is actually a grid with the bio thing next to this in desktop mode-->
+            <div class="row"> <!--Row class-->
+                <div class="col-sm-6 webTech" style="background-color:#007491;"><h3>Web Technologies</h3>Make a list of technologies <!--WebTech row/1 with list-->
+                    <ul class="list-unstyled">
+                        <li>1.</li>
+                        <li>2.</li>
+                        <li>3.</li>
+                        <li>4.</li>
+                        <li>5.</li>
+                        <li>6.</li>
+                        <li>7.</li>
+                        <li>8.</li>
+                        <li>9.</li>
+                        <li>10.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 webBio" style="background-color: #2a9b35;"><h3>BIO</h3> <!--Personal Boi row/2-->
+                    <div class="row">
+                        <div class="col-sm-3" style="background-color: #2a9b35;"> <!--Row/2.1-->
+                            <img class="bioImage" src="Resources/my-avatar.svg">
+                        </div>
+                        <div class="col-sm-7" style="background-color: #2a9b35;"> <!--Row/2.2-->
+                            <p>Brifly describe personal intrests Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Voluptas inventore velit tenetur! Voluptatibus, ducimus ad? Fugit, odio, aperiam nemo nobis
+                                eos aspernatur, error vero nulla praesentium soluta earum natus amet.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </div>
+        <!--Tile Section-->
+        <section class="debox" id="develeoplment-skill">
+            <div class="container">
+                <h2>Develeoplment skill</h2>
+                <div class="skill-wrapper">
+                    <div class="box">
+                        <h3>HTML</h3>
+                        <img class="headerLogo" src="Resources/html-5.svg">
+                        <p>Using this application, we can question people during Coivd with zero contact as the
+                            questions are
+                            submitted by the appropriate authorities. Using this technology will aid scientific research
+                            during
+                            Covid. Theses questions can be targeted to specific demographics, this gives you much higher
+                            quality
+                            of information. We also have built in a chat bot for complex answers from individuals as a
+                            survey may
+                            not always get the best image. Although if closed answers are needed you can submit that
+                            type of survey. </p>
+                    </div>
+                    <div class="box">
+                        <h3>CSS</h3>
+                        <img class="headerLogo" src="Resources/css-3.svg">
+                        <p>This app offers the ability to care for our elderly population during Covid as we do not have
+                            to
+                            physically interact with them to get information on their wellbeing using the targeted
+                            surveys,
+                            chat bot and personal check in functionality. This was a significant issue during the
+                            pandemic as
+                            people had to call all the old people to register how they were doing during the crisis.
+                            Using this
+                            app it should streamline this process given the appropriate uptake of the app. </p>
+                    </div>
+                    <div class="box">
+                        <h3>JS</h3>
+                        <img class="headerLogo" src="Resources/xml-file.svg">
+                        <p>Using the public space review/issues/complaints functionality of our app, we can crowd-source
+                            areas of
+                            concern in the community such as poor roads, litter issues in public parks, at-risk
+                            communities, or
+                            badly operating public transport.
+                            This can aid government bodies in budgeting and prioritizing areas for issues we feel are
+                            important.</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="backgroundColor statmentOfAuthenticity"> <!--Statment on authenticity-->
+            <div class="container">
+                <h3>Statment of Authenticity</h3>
+                <p>I confirm that: <br>
+                This is an orginal assesment and is entirely my own work. <br>
+                It contains no material previously published or written by another person
+                or myself exept where due acknowledgement is made in the text. <br>
+                No material which to a substantial extent, has been submitted for any other academic course,
+                is  included without acknowledgement.</p>
+
+                <p><strong>Proudly developed by Chris Smith</strong> and rebuilt by Arran Logan-Riley.</p>
+            </div>
+        </section>
+    </main>
+
+    <Footer id="footer">
+        <div class="container">
+            <p class="text-center">Advanced Web Design, CopyRight@ 2020</p>
+            <p class="text-right">Icons made by icomoon from <www class="flaticon com"></www> licenced by CC 3.0 BY</p>
+        </div>
+    </Footer>
+
+</body>

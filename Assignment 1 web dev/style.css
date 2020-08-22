@@ -1,0 +1,244 @@
+.navBarCustom{
+    background-color: #2a3a4a;
+    
+    border-bottom: 3px solid lightgreen;
+}
+
+.headerLogo{
+    height: 3em;
+    width: 3em;
+}
+
+.box{
+    padding: 2em;
+}
+
+.backgroundColor{
+    background-color: tomato;
+    padding-bottom: 10px;
+}
+
+.activeColor a{ /*make the color of the home page green*/ 
+    color: green;
+    font-size: 1.1em !important; /*important should not be used. I should acess the boostrap class and change it
+    but i could'nt figure out how to do that*/
+}
+
+.navbar-nav{
+    font-size: 1.1em !important;
+}
+
+.navbar-brand{
+    font-size: 1.1em !important;
+}
+
+
+.dropdown-menu {
+    background-color: #2a3a4a;
+}
+
+
+.navbar-nav > li > .dropdown-menu > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #007491;
+    color: #FFC0CB;
+    /*this changes the color of the dropdown menu when your cursor hovers over it*/ 
+}
+
+.navbar-nav > li > .dropdown-menu { 
+    background-color: #2a3a4a;
+    /*this changes the bacground color of the dropdwon menu to the selected color*/ 
+}
+.navbar-nav > li > .dropdown-menu > a {
+    color: white;
+    /*this changes the color of the dropdown menu text color to white*/
+}
+
+.showCase .container{ /*the width of the showcase container*/ 
+    width: 95%;
+    min-height: 40vh;
+    padding-top: 8em;
+    color:#f2f2f2;
+    padding-bottom: 10px;
+}
+.showCase h2{
+    font-size: 2em !important;
+}
+.showCase p{
+    font-size: 1.1em;
+}
+
+@media only screen and (min-width: 600px){ /*for tablet*/
+    .showCase .container{
+        width: 90%;
+        min-height: 30vh;
+    }
+    .showCase h2{
+        font-size: 3em !important;
+    }
+    .showCase p{
+        font-size: 1.3em;
+    }
+}
+
+.webTech h3{ /*web technologies h3 size*/ 
+font-size: 1.5em;
+}
+
+.webTech li{ /*web technologies li size*/
+    font-size: 1.1em;
+}
+
+.webBio h3{ /*bio  h3 size*/
+    font-size: 1.5em;
+}
+
+.webBio p{ /*bio p size*/
+    font-size:1.2em;
+}
+
+.box h3{ /*chaning the size of the h3 inside the web technologies boxes*/ 
+    font-size: 1.5em;
+}
+.box p{ /*chaning the size of the p inside the web technologies boxes*/ 
+    font-size: 1.2em;
+}
+
+.box{
+    background-color:#E0E0E0;
+    margin: 15px;
+}
+
+/*.NOTE THERE MUST BE A SPACE INBETWEEN THE "AND" AND "(" OF A MEDIA QUEREY*/
+@media only screen and (min-width: 992px){ /*for desktop*/
+    .showCase .container{
+        width: 80%;
+        min-height: 30vh;  
+    }
+    .showCase h2{
+        font-size: 3.3em !important;
+    }
+    .showCase p {
+        font-size: 1.5em;
+    }
+}
+
+.webBio .bioImage{ /*web bio image widht and height*/ 
+    width: 8em;
+    height: 8em;
+}
+
+.statmentOfAuthenticity .container h3{
+    font-size: 1.5em;
+}
+
+/*This will make it awkard to use on mobile as you cant hoevr, but this is not specifed in the design document */
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #2a3a4a;}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+#showCase{
+    text-align: center;
+
+    color: white;
+    background-image: url(Resources/showcase-image.jpeg)
+    }
+#footer{
+    background-color: lightslategrey;
+}
+@media only screen and (max-width: 768px) {
+    .headerLogo{
+        height: 2em;
+        width: 2em;
+    }
+}
+
+  /*make the three boxes horizontal*/
+@media screen and (min-width: 600px){
+    .skill-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /*using 1 fraction*/
+    }
+  }
+
+  /*-----HTML FORM PAGE-----*/
+.infoArea .container{
+    min-height: 25vh;
+    margin: auto;
+}
+
+.infoBackGroundColor{
+Background-color: #7b8091; 
+}
+
+@media only screen and (min-width: 600px){ /*for tablet*/
+     .forms .container{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .forms .container{
+        width: 50%;
+    }
+}
+
+/*------GOOGLE FORM-----*/
+
+.iFrame {
+    width: 100%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 600px){ /*change the size of the google form when above 600px for tablet and Ipad*/
+    .iFrame{
+        width: 70%;
+    }
+}
+
+/*------XML RULES-----*/
+.XMLRules .box{ /*XML box margin*/ 
+    margin: 1em;
+    background-color: #E0E0E0;
+}
+
+/*---XML Rss feed---*/
+
+@media only screen and (min-width: 600px){ /*for tablet*/ 
+    .Rss-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 992px){ /*when its for a desktop, display in 3fr*/
+    .Rss-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*using 1 fraction*/
+     }
+}
+
+.XMLRSS .box{
+    background-color: #b3a98a;
+    margin: 1em; 
+    padding: 2em 1em; 
+}
+
+.list-unstyled{ /*List in the seo padding*/ 
+    padding-bottom: 8em;
+}
+
+/*-----Refrences---*/
+.copyrightprivacy .p{
+ /*incedent-text?*/ 
+}
+
