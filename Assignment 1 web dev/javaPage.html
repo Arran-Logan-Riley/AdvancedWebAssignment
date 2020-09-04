@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--so it is responsive-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <!--import the js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Jqurry is needed for dropdown-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg navBarCustom">
+        <img class="headerLogo" src="Resources/globe-grid.svg">
+        <h2 class="text-light">ITDW 6.400</h2>
+        <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown ">
+                    <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false"
+                        href="index.html">HOME </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FORMS
+                    </a>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="form.html">HTML</a>
+                        <a class="dropdown-item" href="googleForm.html">GOOGLE</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropbtn text-light" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        XML
+                    </a>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="xmlRules.html">XML RULES</a>
+                        <a class="dropdown-item" href="xmlRss.html">XML RSS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropbtn text-light" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        RESEARCH
+                    </a>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="seo.html">SEO</a>
+                        <a class="dropdown-item" href="copyRight.html">COPYRIGHT</a>
+                        <a class="dropdown-item" href="refrences.html">REFRENCES</a>
+                </li>
+                <li class="activeColor">
+                    <a class="navbar-brand nav-link " aria-haspopup="true" aria-expanded="false" href="#">JAVASCRIPT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <header>
+        <section class="infoBackGroundColor infoArea">
+            <!--Info area-->
+            <div class="container">
+                <h2>JavaScript Exercise</h2>
+                <br>
+                <p>JavaScript is a web based text programming language. JavaScript enables you to create logic in your website 
+                    and is a very common language and can get surprisingly complex.  
+                </p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <!--VOWEL checker-->
+            <div class="container">
+                <div>
+                    <div class="box">
+                        <h2>Vowel Checker</h2>
+                        <form name="getEnteredWrok">
+                            <input class="form-control col-sm-4" type="text" name="characters"
+                                placeholder="Enter Your Word">
+                            <input class="btn" type="button" name="checkForVowel" value="Check For Vowels"
+                                onclick="check4Vowles()">
+                        </form>
+                        <p id="vowelsFound"></p>
+                        <script>
+                            function check4Vowles() {
+                                //get user input 
+                                var enteredCharaceters = document.getEnteredWrok.characters.value;
+                                //get the element that you want to change
+                                var output = document.getElementById('vowelsFound');
+                                //check if the entered variable is a vowel or not
+                                if (enteredCharaceters.length == 1) {
+                                    //check if the letter is a vowel or not [AEIOU]
+                                    var vowelList = "aeiou";
+                                    let position = vowelList.indexOf(enteredCharaceters.toLowerCase);
+                                    //index of method reterns "-1" if the substring not coint in the char string 
+                                    //retern the position of the sibstring in the char string 
+                                    if (position >= 0) {
+                                        output.innerHTML = enteredCharaceters + " is a vowel"
+                                    } else {
+                                        output.innerHTML = enteredCharaceters + " is a vowel";
+                                    }
+                                } else {
+                                    output.innerHTML = "Input is invalid";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="iamgeClicker">
+            <!--Deisplay and hide an image-->
+            <div class="container">
+                <div>
+                    <div class="box">
+                        <h3>Show/hide and image when checked check box</h3>
+                        <div class="checkbox">
+                            <label><input type="checkbox" onclick="toggle()" value="">Toggle</label>
+                            <img id="advatarImage" src="Resources/my-avatar.svg" height="50" width="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function toggle() { //this method checks the status of the image and sets it to the oppersite status when called
+                    var imageStatus;
+                    imageStatus = document.getElementById('advatarImage');
+                    if (imageStatus.style.visibility == 'hidden') {
+                        imageStatus.style.visibility = 'visible';
+                    } else {
+                        imageStatus.style.visibility = 'hidden';
+                    }
+                }
+            </script>
+        </section>
+
+        <section class="GSTcalculator">
+            <!--GST checker-->
+            <div class="container">
+                <div>
+                    <div class="box">
+                        <h2>GST calculator: 15%</h2>
+                        <form name="getCalculator">
+                            <input class="form-control col-sm-6" type="number" name="amount"
+                                placeholder="Enter Your Ammount">
+                            <input class="btn" type="button" name="calculate-value" value="Calculate GST"
+                                onclick="calculate()">
+                            <input class="btn" type="button" name="Rset" value="Reset" onclick="reset()">
+                        </form>
+                        <p id="numberOutCome"></p>
+                        <script>
+                            function calculate() {
+                                var enteredAmount = document.getCalculator.amount.value;
+                                var output = document.getElementById('numberOutCome');
+                                output.innerHTML = "For " + enteredAmount + "$ " + "GST is $" + enteredAmount * 0.15;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dateChecker">
+            <!--Date Checker-->
+            <div class="container">
+                <div>
+                    <div class="box">
+                        <h3>Date Checker</h3>
+                        <p>Enter a Date</p>
+                        <form name="getDate">
+                            <input class="form-control col-sm-4" id="dateIn" type="date" name="date" placeholder="Enter a Date">
+                            <br>
+                            <input class="btn" type="button" name="calculate-value" value="Format Date"
+                                onclick="formatDate()">
+                            <p>Date:<span>
+                                    <p id="dateP"></p>
+                                </span></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function formatDate() { //format the date that has been entered
+                    Date(document.getElementById("dateIn").value).toString().substring(3);
+
+                    var date = new Date(document.getElementById("dateIn").value);
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                    document.getElementById("dateP").innerHTML = date.getDate().toString() + " " + months[date.getMonth().toString()] + " "+  date.getFullYear().toString();
+ 
+                }
+            </script>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--so it is responsive-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>This is a test</title>
+    <title>XMLRules</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <!--import the js-->
@@ -18,19 +18,22 @@
         crossorigin="anonymous"></script>
 </head>
 <!--XML rusles and XML RSS-->
+
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navBarCustom">
             <img class="headerLogo" src="Resources/globe-grid.svg">
             <h2 class="text-light">ITDW 6.400</h2>
-            <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown ">
-                        <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="index.html">HOME </a>
+                        <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false"
+                            href="index.html">HOME </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
@@ -40,28 +43,29 @@
                         <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="form.html">HTML</a>
                             <a class="dropdown-item" href="googleForm.html">GOOGLE</a>
-                        </li>
-                        <li class="nav-item dropdown activeColor">
-                            <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                XML
-                            </a>
-                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">XML RULES</a>
-                                <a class="dropdown-item" href="xmlRss.html">XML RSS</a>
-                        </li>
+                    </li>
+                    <li class="nav-item dropdown activeColor">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            XML
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">XML RULES</a>
+                            <a class="dropdown-item" href="xmlRss.html">XML RSS</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             RESEARCH
                         </a>
                         <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">XEO</a>
-                            <a class="dropdown-item" href="#">COPYRIGHT</a>
-                            <a class="dropdown-item" herf="#">REFRENCES</a>
+                            <a class="dropdown-item" href="seo.html">SEO</a>
+                            <a class="dropdown-item" href="copyRight.html">COPYRIGHT</a>
+                            <a class="dropdown-item" href="refrences.html">REFRENCES</a>
                     </li>
                     <li>
-                        <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="#">JAVASCRIPT
+                        <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false"
+                            href="javaPage.html">JAVASCRIPT
                         </a>
                     </li>
                 </ul>
@@ -71,38 +75,72 @@
     </header>
 
     <main>
-        <section class="infoBackGroundColor infoArea"> <!--Info area-->
+        <section class="infoBackGroundColor infoArea">
+            <!--Info area-->
             <div class="container">
-              <h2>XML Rules</h2>
-              <br>
-              <p>XML has rules that must be follwed in order to be a vaild xml file.
-                  Describe 6 of theses with code examples below: </p>
+                <h2>XML Rules</h2>
+                <br>
+                <p>XML has rules that must be follwed in order to be a vaild xml file.
+                    The folllowing rules should be applied when creating XML fiiles:</p>
             </div>
-          </section>
+        </section>
         <section class="XMLRules">
             <div>
-                <div class="box"> <!--box1-->
-                    <h1>test1</h1>
-                </div>
-                <div class="box"> <!--box2-->
-                    <h2>test2</h2>
-                </div>
-                <div class="box"> <!--box3-->
-                    <h2>test3</h2>
-                </div>
-                <div class="box"> <!--box4-->
-                    <h2>test4</h2>
-                </div>
-                <div class="box"> <!--box5-->
-                    <h2>test5</h2>
+                <div class="box">
+                    <!--box1-->
+                    <h2>Root elements</h2>
+                    <p>Every element in a XML file must have a root parent that all elements relate to.</p>
                 </div>
                 <div class="box">
-                    <h2>Test6</h2>
+                    <!--box2-->
+                    <h2>XML prolog</h2>
+                    <p>The XML prolog is optional, if the prolog is to be used, it must come first in the document. The
+                        XML prolog is shown below <br>
+                        <code>  &lt;?xml version="1.0" encoding="UTF-8"?&gt;</code> <br>
+                        You should always specify that you are using UFT-8 to avoid errors. Internatinal characters may
+                        be used in the
+                        prolog.
+                    </p>
+                </div>
+                <div class="box">
+                    <!--box3-->
+                    <h2>Closing Tag</h2>
+                    <p>All XML elements must have a closing tag: <code>&gt;</code> to specify the ending of an element.
+                    </p>
+                </div>
+                <div class="box">
+                    <!--box4-->
+                    <h2>Case Sensativity</h2>
+                    <p>Tags in XML are case sensative, this means that <code>&lt;Test&gt;</code> is diffrent from
+                        <code>&lt;test&gt;</code></p>
+                </div>
+                <div class="box">
+                    <!--box5-->
+                    <h2>Indentation</h2>
+                    <p>All XML elements must be properly indented. This means that the elements <strong>must</strong> be
+                        in order, shown below is an example of a wrongly indented element: <br>
+                        <code>&lt;a&gt;&lt;b&gt;test&lt;a&gt;&lt;b&gt;</code></p>
+                    It should be done as the folllowing: <br>
+                    <code>&lt;a&gt;&lt;b&gt;test&lt;b&gt;&lt;a&gt;</code>
+                </div>
+                <div class="box">
+                    <!--box6-->
+                    <h2>Entity refrences</h2>
+                    <p>If you need to write a arrow:&lt; you must use the URL encoded verson : <code>&amp;lt;</code>
+                        becuase if you
+                        write in a &lt; it will think you are putting in a end tag. </p>
                 </div>
             </div>
             </div>
 
         </section>
+        <div class="footer" id="footer">
+            <div class="container">
+                <p class="text-center">Advanced Web Design, CopyRight@ 2020</p>
+                <p class="text-right">Icons made by icomoon from <www class="flaticon com"></www> licenced by CC 3.0 BY
+                </p>
+            </div>
+        </div>
 
     </main>
 

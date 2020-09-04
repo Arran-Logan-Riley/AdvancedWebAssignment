@@ -1,197 +1,252 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--so it is responsive-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lab 4 Form</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <!--import the js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--Jqurry is needed for dropdown-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--so it is responsive-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <!--import the js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--Jqurry is needed for dropdown-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </head>
 <header class="header">
   <nav class="navbar navbar-expand-lg navBarCustom">
-      <img class="headerLogo" src="Resources/globe-grid.svg">
-      <h2 class="text-light">ITDW 6.400</h2>
-      <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                  <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="index.html">HOME </a>
-              </li>
-              <li class="nav-item dropdown activeColor">
-                  <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      FORMS
-                  </a>
-                  <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="form.html">HTML</a>
-                      <a class="dropdown-item" href="googleForm.html">GOOGLE</a>
-                  </li>
-              <li>
-                  <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="#">XML </a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link text-light dropbtn" href="#" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      RESEARCH
-                  </a>
-                  <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">XEO</a>
-                      <a class="dropdown-item" href="#">COPYRIGHT</a>
-                      <a class="dropdown-item" herf="#">REFRENCES</a>
-              </li>
-              <li>
-                  <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="#">JAVASCRIPT
-                  </a>
-              </li>
-          </ul>
-      </div>
+    <img class="headerLogo" src="Resources/globe-grid.svg">
+    <h2 class="text-light">ITDW 6.400</h2>
+    <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ">
+          <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false" href="index.html">HOME
+          </a>
+        </li>
+        <li class="nav-item dropdown activeColor">
+          <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            FORMS
+          </a>
+          <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="form.html">HTML</a>
+            <a class="dropdown-item" href="googleForm.html">GOOGLE</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropbtn text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            XML
+          </a>
+          <div class="dropdown-menu dropdown-content " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="xmlRules.html">XML RULES</a>
+            <a class="dropdown-item" href="xmlRss.html">XML RSS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropbtn text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            RESEARCH
+          </a>
+          <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="seo.html">SEO</a>
+            <a class="dropdown-item" href="copyRight.html">COPYRIGHT</a>
+            <a class="dropdown-item" href="refrences.html">REFRENCES</a>
+        </li>
+        <li>
+          <a class="navbar-brand nav-link text-light" aria-haspopup="true" aria-expanded="false"
+            href="javaPage.html">JAVASCRIPT
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
 </header>
+
 <body>
-  <section class="infoBackGroundColor infoArea"> <!--Info area-->
+  <section class="infoBackGroundColor infoArea">
+    <!--Info area-->
+    <div class="container">
+      <h2>HTML FORM</h2>
+      <br>
+      <p>Form genorated to post an email account</p>
+    </div>
+  </section>
   <div class="container">
-    <h2>HTML FORM</h2>
-    <br>
-    <p>Form genorated to post an email account</p>
-  </div>
-</section>
-  <div class="container">
-  <section class="forms" id="forms">
-    <div class="container float-left">    
-    <main>
-    <hr>
-    <form name="bootStrapForm" method="POST" action="mailto.arranlrbusiness@gmail.com" enctype="text/plain"> <!--enctype is for what type of data weare sending-->
-        <div class="form-group row">
-          <label for="FirstName" class="col-sm-2 col-form-label">First Name:</label>
-          <div class="invalid-feedback">
-            Please provide a valid name.
-          </div>
-          <div class="col-sm-10 ">
-            <input type="email" class="form-control" id="FirstName" placeholder="First Name" required="required">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="LastName" class="col-sm-2 col-form-label">Last Name:</label>
-          <div class="col-sm-10">
-            <input type="name" class="form-control" id="lastName" placeholder="Last Name" required="required">
-          </div>
-        </div>
-        <hr>
-        <h4>Address</h4>
-        <div class="form-group row">
-            <label for="line1" class="col-sm-2 col-form-label">Line 1:</label>
-            <div class="col-sm-10">
-              <input type="name" class="form-control" id="lastName" placeholder="Line 1" required="required">
+    <section class="forms" id="forms">
+      <div class="container float-left">
+        <main>
+          <hr>
+          <form name="bootStrapForm" method="POST" action="mailto.arranlrbusiness@gmail.com" enctype="text/plain">
+            <!--enctype is for what type of data weare sending-->
+            <div class="form-group row">
+              <label for="FirstName" class="col-sm-2 col-form-label">First Name:</label>
+              <div class="invalid-feedback">
+                Please provide a valid name.
+              </div>
+              <div class="col-sm-10 ">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required="required">
+              </div>
             </div>
-          </div>
+            <div class="form-group row">
+              <!--Last Name form-->
+              <label for="LastName" class="col-sm-2 col-form-label">Last Name:</label>
+              <div class="col-sm-10">
+                <input type="name" class="form-control" id="lastName" placeholder="Last Name" required="required">
+              </div>
+            </div>
+            <hr>
+            <h4>Address</h4>
+            <div class="form-group row">
+              <!--Address Section: line 1-->
+              <label for="line1" class="col-sm-2 col-form-label">Line 1:</label>
+              <div class="col-sm-10">
+                <input type="name" class="form-control" id="line1" placeholder="Line 1" required="required">
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--Address Section: Line 2-->
+              <label for="line2" class="col-sm-2 col-form-label">Line 2:</label>
+              <div class="col-sm-10">
+                <input type="name" class="form-control" id="line2" placeholder="Line 2" required="required">
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--Town/City Form-->
+              <label for="town/City" class="col-sm-2 col-form-label">Town/City:</label>
+              <div class="col-sm-10">
+                <input type="name" class="form-control" id="town/city" placeholder="Town/City" required="required">
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <h4>Gender</h4>
+              <!--Gender form-->
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="GenderMale" value="option1">
+                    <label class="form-check-label" for="Gender1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="GenderFemale" value="option2">
+                    <label class="form-check-label" for="Gender2">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Gender" id="GenderOther" value="option3">
+                    <label class="form-check-label" for="Gender3">
+                      Other
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!---Mobile phone type-->
+              <h4>Mobile Phone Type</h4>
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys1" value="option1">
+                    <label class="form-check-label" for="OperatingSys1">
+                      Windows
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys2" value="option2">
+                    <label class="form-check-label" for="OperatingSys2">
+                      IOS
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys3" value="option3">
+                    <label class="form-check-label" for="OperatingSys3">
+                      Andriod
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys4" value="option3">
+                    <label class="form-check-label" for="OperatingSys4">
+                      Other
+                    </label>
+                  </div>
+                </div>
+                <!---field selector-->
+                <div class="form-group row col-md-6 ">
+                  <label for="exampleFormControlSelect1">Mobile Provider</label>
+                  <select class="form-control col-md-6 " id="exampleFormControlSelect1">
+                    <option value="None">None</option>
+                    <option value="spark">Spark</option>
+                    <option value="vodaphone">VodaPhone</option>
+                    <option value="now">Now</option>
+                    <option value="2degrees">2 degrees</option>
+                    <option value="skimmy">Skinny</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <!--Text area-->
+                <div class="form-group col-md-12">
+                  <label for="exampleFormControlTextarea1">Do you use your phone for study? Explain</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+          </form>
           <div class="form-group row">
-            <label for="line2" class="col-sm-2 col-form-label">Line 2:</label>
-            <div class="col-sm-10">
-              <input type="name" class="form-control" id="lastName" placeholder="Line 2" required="required">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="town/City" class="col-sm-2 col-form-label">Town/City:</label>
-            <div class="col-sm-10">
-              <input type="name" class="form-control" id="lastName" placeholder="Town/City" required="required">
-            </div>
-          </div>
-        <fieldset class="form-group">
-            <h4>Gender</h4>
-          <div class="row">
-            <div class="col-sm-10">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Gender" id="Gender1" value="option1" checked>
-                <label class="form-check-label" for="Gender1">
-                  Male
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Gender" id="Gender2" value="option2">
-                <label class="form-check-label" for="Gender2">
-                  Female
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Gender" id="Gender3" value="option3" checked>
-                <label class="form-check-label" for="Gender3">
-                  Other
-                </label>
-              </div>
-            </div>
-          </div>
-          <!---Mobile phone type-->
-          <h4>Mobile Phone Type</h4>
-          <div class="row">
-            <div class="col-sm-10">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys1" value="option1" checked>
-                <label class="form-check-label" for="OperatingSys1">
-                  Windows
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys2" value="option2">
-                <label class="form-check-label" for="OperatingSys2">
-                  IOS
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys3" value="option3" checked>
-                <label class="form-check-label" for="OperatingSys3">
-                  Andriod
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="OperatingSys" id="OperatingSys4" value="option3" checked>
-                <label class="form-check-label" for="OperatingSys4">
-                  Other
-                </label>
-            </div>
-          </div>
-          <!---field selector-->
-          <div class="form-group row col-md-6 ">
-            <label for="exampleFormControlSelect1">Mobile Provider</label>
-            <select class="form-control col-md-6 " id="exampleFormControlSelect1">
-              <option>None</option>
-              <option>Spark</option>
-              <option>VodaPhone</option>
-              <option>Now</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <!--Text area-->
-          <div class="form-group col-md-12">
-            <label for="exampleFormControlTextarea1">Do you use your phone for study? Explain</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        </form>
-        <div class="form-group row">
             <div style="text-align: center;">
-                <a href="#" class="btn btn-info" role="button">Submit</a>
-                <a href="#" class="btn btn-info" role="button">Reset</a>
+              <a href="#" class="btn btn-info" onclick="submit()" role="button">Submit</a>
+              <!--Submit Button-->
+              <input class="btn btn-info" type="reset" value="Reset the form">
             </div>
           </div>
-      </form>
+          </form>
     </section>
-    </div>
-    </div>
-    </main>
 
-    <footer>
+    <section>
+      <!--MailTo-->
+      <script>
+        function submit() { //Mail To Function   
+          var firstName = document.getElementById('firstName').value; //First name
+          var lastName = document.getElementById('lastName').value;
+          var line1 = document.getElementById('line1').value;
+          var line2 = document.getElementById('line2').value;
+          var line3 = document.getElementById('town/city').value;
 
-    </footer>
+          var option1 = document.getElementById('GenderMale').checked; //gender
+          var option2 = document.getElementById('GenderFemale').checked;
+          var option3 = document.getElementById('GenderOther').checked;
+
+          var OSOpt1 = document.getElementById('OperatingSys1').checked; //OS
+          var OSOpt2 = document.getElementById('OperatingSys2').checked;
+          var OSOpt3 = document.getElementById('OperatingSys3').checked;
+          var OSOpt4 = document.getElementById('OperatingSys4').checked;
+
+          var mobileProv = document.getElementById('exampleFormControlSelect1').value; //mobile provider selector
+
+          var textArea = document.getElementById('exampleFormControlTextarea1').value; //text area
+
+
+          //Format the inputs and mailto
+          window.location.href = "mailto:" + "daniel.dang.nz@gmail.com" + "?subject=" + "Feed back form" + "&body=" + "FirstName: " + firstName + "%0A" +
+            "LastName: " + lastName + "%0A" + "line1: " + line1 + "%0A" + "line2: " + line2 + "%0A" + "line3: " + line3 + "%0A" + "Male: " + option1 + "%0A" + "Female " + option2 + "%0A" + "Other " + option3 + "%0A" +
+            "Windows: " + OSOpt1 + "%0A" + "ISO: " + OSOpt2 + "%0A" + "Andriod: " + OSOpt3 + "%0A" + "Other: " + OSOpt4 + "%0A" + "Mobile provider: " +
+            mobileProv + "%0A" + "Is phone used for study: " + textArea;
+        }
+      </script>
+  </div>
+  </div>
+  </section>
+  </main>
+
+
+  <footer>
+
+  </footer>
 </body>
